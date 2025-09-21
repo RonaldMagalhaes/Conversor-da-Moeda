@@ -1,0 +1,138 @@
+body.background-primary {
+    background: #F4F5FB;
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container {
+    background: #FFF;
+    max-width: 400px;
+    margin: 40px auto;
+    border-radius: 16px;
+    padding: 32px 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.voltar {
+    color: #CA3884;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 16px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #080B12;
+    margin-bottom: 24px;
+}
+
+.form-lista {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.input-text {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1.5px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #080B12;
+    background: #FFF;
+    outline: none;
+    transition: border 0.2s;
+}
+.input-text:focus {
+    border-color: #B9C2D0;
+}
+
+.btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-brand {
+    background: #CA3884;
+    color: #FFF;
+}
+.btn-brand:hover {
+    background: #A52C6B;
+}
+.btn-danger {
+    background: #C93847;
+    color: #FFF;
+    margin-left: 8px;
+}
+.lista-itens {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.item-lista {
+    display: flex;
+    align-items: center;
+    background: #FFF;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border: 1.5px solid #D1D5DB;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.01);
+}
+.item-lista:last-child {
+    border-bottom: none;
+}
+.checkbox-custom {
+    margin-right: 12px;
+    accent-color: #CA3884;
+}
+.item-texto {
+    flex: 1;
+    font-size: 16px;
+    color: #080B12;
+}
+.btn-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.alerta-removido {
+    margin: 24px auto 0 auto;
+    background: #C93847;
+    color: #FFF;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    max-width: 400px;
+    position: relative;
+    animation: fadeIn 0.2s;
+}
+.alerta-removido .close-alert {
+    background: none;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

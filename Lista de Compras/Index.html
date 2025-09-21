@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap" rel="stylesheet">
+</head>
+<body class="background-primary">
+    <main class="container">
+        <img src="https://svgshare.com/i/14wW.svg" alt="quicklist logo" style="display:block;margin:32px auto 8px auto;width:120px;">
+        <a href="#" class="voltar">&lt; Voltar</a>
+        <h2 class="title" style="margin-top:16px;">Compras da semana</h2>
+        <form id="form-lista" class="form-lista">
+            <input 
+                type="text" 
+                id="item-input" 
+                class="input-text" 
+                placeholder="Adicione um novo item" 
+                required
+            >
+            <button type="submit" class="btn btn-brand">Adicionar item</button>
+        </form>
+        <ul id="lista" class="lista-itens"></ul>
+        <!-- Alerta será inserido via JS -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
